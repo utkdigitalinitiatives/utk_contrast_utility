@@ -2,34 +2,42 @@ body {
   padding: 0;
   margin: 0;
   overflow: visible;
+  background-color: #e0e0e0;
+  font-size: 19px;
 }
 
 .app {
-  font-size: 15px;
+  font-size: 19px;
   color: #333;
   overflow-x: scroll;
-  margin-left: 194px;
+  margin-left: 191px;
   overflow-y: visible;
   padding: 0;
+  padding-bottom: 50px;
+}
+
+.key {
+  font-size: 15px;
 }
 
 h1 {
-  font-size: 20px;
+  font-size: 32px;
   font-weight: 400;
   margin: 0;
   padding: 13px;
-  display: none;
-
 }
-body {
-  background-color: #fff;
+
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 13px;
 }
 
 table {
   border-collapse: separate;
   border-spacing: 0;
-  border-bottom: 1px solid #e0e0e0;
-  margin-bottom: 50px;
+  background-color: #fff;
 }
 
 table tr:first-child {
@@ -46,38 +54,29 @@ table:hover tr:hover {
   opacity: 1;
 }
 
-th {
-  position: fixed;
-  width: 5em;
-  left: 0;
-  top: auto;
-  border-top-width: 1px;
-  /*only relevant for first row*/
-  margin-top: -1px;
-  /*compensate for top border*/
-}
-
 .contrast-row-head {
   font-weight: 700;
   padding-left: 30px;
   position: absolute;
-  width: 150px;
+  width: 148px;
   left: 0;
   top: auto;
-  border-top-width: 1px;
   /*only relevant for first row*/
-  margin-top: -1px;
-  border-right: 3px solid #cacaca;
+  border-right: 2px solid #e0e0e0;
+  background-color: #fff;
   /*compensate for top border*/
 }
 
 .contrast-row-head-title {
   padding-left: 10px !important;
-  width: 170px;
+  width: 168px;
   font-size: 15px;
   padding-top: 18px;
   padding-bottom: 2px;
   text-align: center;
+  position: absolute;
+  left: 0;
+  border-right: 2px solid #e0e0e0;
 }
 
 .contrast-row-head-title strong {
@@ -186,6 +185,7 @@ td span {
   border: 1px solid #e0e0e0;
   box-shadow: 2px 2px 5px #cacaca50;
   border-radius: 4px;
+  z-index: 10;
 }
 
 .hover .color-box {
@@ -211,4 +211,18 @@ td span {
 
 td:hover .hover {
   display: block;
+}
+
+.references {
+  background-color: #e0e0e0;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  font-weight: 700;
+  width: 100%;
+  font-size: 15px;
+  position: fixed;
+  bottom: 0;
+  z-index: 0;
+  left: 0;
 }
