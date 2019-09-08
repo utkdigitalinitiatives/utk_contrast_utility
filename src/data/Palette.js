@@ -21,6 +21,7 @@ const palette = [
     {'name': 'Switchgrass', 'hex': '#abc178'},
     {'name': 'Fountain', 'hex': '#2197a9'},
     {'name': 'Eureka', 'hex': '#ebea64'},
+    {'name': 'Buckskin', 'hex': '#705550'},
     {'name': 'Limestone', 'hex': '#f0ede3'}
 ];
 
