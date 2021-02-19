@@ -24,19 +24,19 @@ export class Cell extends Component {
         if (ratio === 1) {
 
             return (
-                <td>
+                <div className="contrast-cell">
                     -
-                </td>
+                </div>
             )
         } else {
             return (
-                <td className={`contrast-cells${accessibilityClass}`}>
+                <div className={`contrast-cell${accessibilityClass}`}>
                     {ratio} <span className="color-badge">{accessibilityAllow}</span>
                     <div className="hover">
                         <div className="color-box" style={{backgroundColor: foreground.hex}}><em>{foreground.name}</em></div>
                         <div className="color-box" style={{backgroundColor: background.hex}}><em>{background.name}</em></div>
                     </div>
-                </td>
+                </div>
             )
         }
     }

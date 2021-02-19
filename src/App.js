@@ -10,7 +10,7 @@ class App extends Component {
 
         const columns = palette.map((color, index) => {
             return (
-                <th className="contrast-col-head">
+                <th className="contrast-col-head contrast-cell">
                     <strong>{color.name}</strong>
                     <div className="color" style={{backgroundColor: color.hex}}></div>
                 </th>
@@ -26,38 +26,34 @@ class App extends Component {
                 )
             });
             return (
-                <tr className="contrast-row">
-                    <td className="contrast-row-head">
+                <div className="contrast-row">
+                    <div className="contrast-row-head">
                         <div className="color-box" style={{backgroundColor: color.hex}}></div>
                         {color.name}
-                        <em className="color-hex">{color.hex}</em>
-                    </td>
+                        <span className="color-hex">{color.hex}</span>
+                    </div>
                     {matchAgainst}
-                </tr>
+                </div>
             );
         });
 
         return (
             <section>
                 <div className="key">
-                    <h1>UT Knoxvile Contrast Matrix</h1>
-                    <h2>Following WCAG 2.1 AA</h2>
+                    <h1>UT Knoxville Contrast Matrix</h1>
+                    <p>Following <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.0 AA</a></p>
                     <ul>
-                        <li><strong>All:</strong> Has contrast ratio of <em>4.5:1</em> or higher. Can be used in any situation within reason.</li>
+                        <li><strong>Any:</strong> Has contrast ratio of <em>4.5:1</em> or higher. Can be used in any situation within reason.</li>
                         <li><strong>Large:</strong> Has contrast ratio of <em>3:1</em> or higher and should be used on bold text 19px or larger OR on normal text 24px or larger. Abiding by WCAG 2.1, non-text elements (icons) without accompanying text-based descriptors can be used as well.</li>
                     </ul>
                 </div>
                 <div className="app">
-                    <table cellPadding={0} cellSpacing={0}>
-                        <tr className="contrast-row">
-                            <th className="contrast-row-head contrast-row-head-title">
-                                <strong>Matrix</strong>
-                            </th>
-                            {columns}
-                        </tr>
-                        {rows}
-                    </table>
-                    <div className="references"><a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">https://www.w3.org/WAI/standards-guidelines/wcag/</a></div>
+                    <div className="contrast-row">
+                        <div className="contrast-row-head contrast-row-head-title">
+                        </div>
+                        {columns}
+                    </div>
+                    {rows}
                 </div>
             </section>
         );
