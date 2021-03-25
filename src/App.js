@@ -44,7 +44,7 @@ class App extends Component {
                     <p>Following <a href="https://www.w3.org/WAI/standards-guidelines/wcag/" target="_blank">WCAG 2.0 AA</a></p>
                     <ul>
                         <li><strong>Any:</strong> Has contrast ratio of <em>4.5:1</em> or higher. Can be used in any situation within reason.</li>
-                        <li><strong>Large:</strong> Has contrast ratio of <em>3:1</em> or higher and should be used on bold text 19px or larger OR on normal text 24px or larger. Abiding by WCAG 2.1, non-text elements (icons) without accompanying text-based descriptors can be used as well.</li>
+                        <li><strong>Large:</strong> Has contrast ratio of <em>3:1</em> or higher and should be used on bold text 19px or larger OR on normal text 24px or larger. Abiding by WCAG 2.0, non-text elements (icons) without accompanying text-based descriptors can be used as well.</li>
                     </ul>
                 </div>
                 <div className="app">
